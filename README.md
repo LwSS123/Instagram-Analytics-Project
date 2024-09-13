@@ -23,7 +23,7 @@ Through comprehensive analysis, it was found that the following factors have a s
 - Days active on Instagram
 - Usage percentage of top 10 common hashtags
 - Café place mentions in Instagram bio and full name
-- Data Collection
+- Account operation duration
 
 <br>
 
