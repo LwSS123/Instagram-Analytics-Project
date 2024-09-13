@@ -421,40 +421,37 @@ plot_pairs = [
     ('place_mentions_in_fullName', 'average_post_like')
 ]
 
-# sns.set(style="whitegrid")
+sns.set(style="whitegrid")
 
-# # Determine the number of plots per figure (6 plots per figure)
-# plots_per_figure = 6
+# Determine the number of plots per figure (6 plots per figure)
+plots_per_figure = 6
 
 
-# for i in range(0, len(plot_pairs), plots_per_figure):
-#     fig, axes = plt.subplots(3, 2, figsize=(15, 20))  # Increase the figure size
-#     fig.suptitle('Relationships between Instagram Metrics and User Engagement with Trend Lines', fontsize=16)
+for i in range(0, len(plot_pairs), plots_per_figure):
+    fig, axes = plt.subplots(3, 2, figsize=(15, 20))  # Increase the figure size
+    fig.suptitle('Relationships between Instagram Metrics and User Engagement with Trend Lines', fontsize=16)
     
-#     # Flatten the axes array and loop over it and the corresponding plot pairs
-#     for ax, (x, y) in zip(axes.flat, plot_pairs[i:i+plots_per_figure]):
-#         # Plot with regression line
-#         sns.regplot(ax=ax, data=merged_df, x=x, y=y, scatter_kws={'alpha':0.5})
-#         ax.set_title(f'{x} vs. {y}', fontsize=10)  # Smaller font size for subplot titles
-#         ax.set_xlabel(x.replace('_', ' ').title(), fontsize=9)  # Smaller font size for x labels
-#         ax.set_ylabel(y.replace('_', ' ').title(), fontsize=9)  # Smaller font size for y labels
-#         ax.tick_params(axis='x', rotation=45, labelsize=8)  # Smaller font size for x ticks
-#         ax.tick_params(axis='y', rotation=45, labelsize=8)  # Smaller font size for y ticks
+    # Flatten the axes array and loop over it and the corresponding plot pairs
+    for ax, (x, y) in zip(axes.flat, plot_pairs[i:i+plots_per_figure]):
+        # Plot with regression line
+        sns.regplot(ax=ax, data=merged_df, x=x, y=y, scatter_kws={'alpha':0.5})
+        ax.set_title(f'{x} vs. {y}', fontsize=10)  # Smaller font size for subplot titles
+        ax.set_xlabel(x.replace('_', ' ').title(), fontsize=9)  # Smaller font size for x labels
+        ax.set_ylabel(y.replace('_', ' ').title(), fontsize=9)  # Smaller font size for y labels
+        ax.tick_params(axis='x', rotation=45, labelsize=8)  # Smaller font size for x ticks
+        ax.tick_params(axis='y', rotation=45, labelsize=8)  # Smaller font size for y ticks
     
-#     # Adjust layout to prevent overlap and ensure titles and labels are clear
-#     plt.tight_layout(rect=[0, 0.03, 1, 0.95])
-#     plt.subplots_adjust(wspace=0.3, hspace=0.6)  # Adjust spacing to prevent overlap
-#     plt.show()
+    # Adjust layout to prevent overlap and ensure titles and labels are clear
+    plt.tight_layout(rect=[0, 0.03, 1, 0.95])
+    plt.subplots_adjust(wspace=0.3, hspace=0.6)  # Adjust spacing to prevent overlap
+    plt.show()
 
-#     # Handle potentially fewer subplots in the final figure
-#     if len(plot_pairs[i:i+plots_per_figure]) < plots_per_figure:
-#         for j in range(len(plot_pairs[i:i+plots_per_figure]), plots_per_figure):
-#             axes.flat[j].set_visible(False)
+    # Handle potentially fewer subplots in the final figure
+    if len(plot_pairs[i:i+plots_per_figure]) < plots_per_figure:
+        for j in range(len(plot_pairs[i:i+plots_per_figure]), plots_per_figure):
+            axes.flat[j].set_visible(False)
 
 ###########################
-import tkinter as tk
-from tkinter import scrolledtext
-
 def search_hashtags():
     keywords = entry.get().lower().split(',')
     keywords = [keyword.strip() for keyword in keywords]
