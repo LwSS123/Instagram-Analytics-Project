@@ -47,9 +47,9 @@ Through comprehensive analysis, it was found that the following factors have a s
 # GUI
 The GUI application built with Tkinter enables users to:
 
-Search for specific hashtags.
-Display users who have utilized these hashtags.
-Show other hashtags used by these users.
+- Search for specific hashtags
+- Display users who have utilized these hashtags
+- Show other hashtags used by these users
 
 **Hashtag Search Tool Main Screen**
 
