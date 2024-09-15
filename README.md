@@ -8,6 +8,7 @@ The project evaluates numerous aspects of Instagram accounts including:
 
 - **Number of Instagram posts** (Total_ig_posts)
 - **Average word count per post** (average_post_word_count)
+- **Average hashtag count per post** (avg_hashtag_count)
 - **Account operation duration** (days_from_today)
 - **Update frequency** (DateDiff(days))
 - **Usage of common hashtags** (top10_commontags_using_%)
