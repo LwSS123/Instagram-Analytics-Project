@@ -31,14 +31,15 @@ Through comprehensive analysis, it was found that the following factors have a s
 **Graphs Analyzing the Relationship between Instagram Metrics and User Engagement**
 
 
-![alt text](<Key Insights_1.png>)
+![Key Insights_1](https://github.com/user-attachments/assets/c5a666fc-6f04-40d4-82a2-1b36da62d397)
+
 <br>
 
-![alt text](<Key Insights_2.png>)
+![Key Insights_2](https://github.com/user-attachments/assets/8012778a-1d54-4dd4-9744-ba37682b3d1a)
+
 <br>
 
-![alt text](<Key Insights_3.png>)
-
+![Key Insights_3](https://github.com/user-attachments/assets/d82b2681-7e8d-4e39-af2f-dbfae32cfa14)
 
 # Data was collected using:
 
@@ -54,16 +55,17 @@ The GUI application built with Tkinter enables users to:
 
 **Hashtag Search Tool Main Screen**
 
-<img src="hashtag_search_tool_1.PNG" alt="alt text" width="300"/>
+![hashtag_search_tool_1](https://github.com/user-attachments/assets/40e30215-a7c9-4f3e-a96c-84498bc249e8)
 
 <br>
 
 **Hashtag Used Record Found Screen**
 
-<img src="hashtag_search_tool_2.PNG" alt="alt text" width="300"/>
+![hashtag_search_tool_2](https://github.com/user-attachments/assets/7c57d475-21b2-4101-927a-5068f9618d12)
 
 <br>
 
 **No Users Found Using the Specified Hashtags Screen**
 
-<img src="hashtag_search_tool_3.PNG" alt="alt text" width="300"/>#
+![hashtag_search_tool_3](https://github.com/user-attachments/assets/dd2dbf83-3d4b-4e6b-adf1-1085c618fbb0)
+
