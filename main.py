@@ -452,8 +452,6 @@ plot_pairs = [
 #             axes.flat[j].set_visible(False)
 
 ###########################
-import tkinter as tk
-from tkinter import scrolledtext
 
 def search_hashtags():
     keywords = entry.get().lower().split(',')
